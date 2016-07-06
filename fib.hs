@@ -1,3 +1,10 @@
+{-
+
+FLOLAC 2016 - Topics on tail recursions
+Andy Pan, 2016/7/4
+
+-}
+
 -- slow fib
 fib :: Int -> Int
 fib x | x == 0    = 0
