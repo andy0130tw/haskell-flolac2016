@@ -14,7 +14,7 @@ fib x | x == 0    = 0
 -- fib by tail recursion
 tailFibAcc :: Int -> Int -> Int -> Int
 tailFibAcc a b n | n == 0    = b
-                 | otherwise = tailFibAcc (n - 1) (a + b) a
+                 | otherwise = tailFibAcc (a + b) a (n - 1)
 
 tailFib :: Int -> Int
 tailFib = tailFibAcc 1 0
